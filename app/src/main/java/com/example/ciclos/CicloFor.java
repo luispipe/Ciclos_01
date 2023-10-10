@@ -82,8 +82,19 @@ public class CicloFor {
             System.out.println(i);
         }
 
-
-
-
+        //Ciclo números Aleatorios
+         for (int i=1;i<=10;i++){
+            //Math.random() genera aleatorios entre 0 y 1
+            double aleatorio=Math.random();
+            int min=1;
+            int max=5;
+            //Math.random()*max genera aleatorios desde 0 hasta <max
+            int aleatorio1= (int)(Math.random()*max);
+            // (Math.random()*(max-min+1))+min  permite tomar aleatorio de cualquier rango incluyendo los limites
+            int aleatorio2= ((int)(Math.random()*(max-min+1)))+min;
+            System.out.println(aleatorio);
+            System.out.println(aleatorio1);
+            System.out.println(aleatorio2);
+        }
     */
 }
