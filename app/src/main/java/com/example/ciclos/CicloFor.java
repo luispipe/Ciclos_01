@@ -95,6 +95,32 @@ public class CicloFor {
             System.out.println(aleatorio);
             System.out.println(aleatorio1);
             System.out.println(aleatorio2);
+
+
+
         }
-    */
+
+         String texto= "Bienvenidos al curso de desarrollo de aplicaciones" +
+                "moviles del programa Atenea";
+        //hagan una función que me diga cuantas veces se repite la letra 'a'
+        int count=0;
+        int count2=0;
+        for (int i=0;i<texto.length();i++){
+            if(texto.charAt(i)=='a'){
+                count++;
+            }
+            System.out.println("i="+i+" letra="+texto.charAt(i)+" count="+count);
+
+            if (texto.toLowerCase().charAt(i)=='a'){
+                count2++;
+            }
+            System.out.println("i="+i+" letra="+texto.charAt(i)+" count="+count2);
+        }
+
+        /* Iter 1--> i=0  if(B==a) count=0
+        *  Iter 2--> i=1  if(i==a) count=0
+        *  ...
+        *  Iter 13--> i=12 if(a==a) count=1;
+        * */
+
 }
